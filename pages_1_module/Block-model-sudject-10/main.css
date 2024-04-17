@@ -1,0 +1,22 @@
+*{ margin: 0; padding: 0;}
+html, 
+body{ 
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    margin: 10px; 
+    padding: 5px;
+}
+.container { width: 17vw; }
+
+#a1{border: 2px dotted black;}
+#a2{border: 2px dashed rgb(255, 0, 0);}
+#a3{border: 2px solid black;}
+#a4{border: 2px double black;}
+#a5{border: 2px groove rgb(255, 0, 0);}
+#a6{border: 2px ridge black;}
+#a7{border: 2px inset black;}

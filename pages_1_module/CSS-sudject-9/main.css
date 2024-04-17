@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+div{
+    width: 610px;
+    height: 400px;
+    background-image: url("./img/istockphoto_612x612.jpg");
+    background-repeat: no-repeat;
+    
+}

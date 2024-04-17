@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изображения</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <img src="./img/istockphoto_612x612.jpg" 
+        alt="Котик" 
+        width="400"> 
+    <img src="./img/istockphoto_612x612.svg" 
+        alt="Котик" 
+        width="400"> 
+
+    <h2>Карты изображений</h2>    
+    <img src="./img/istockphoto_612x612.jpg" 
+        usemap="#catmap"
+        alt="Котик" 
+        width="400">    
+    
+        <map name="catmap">
+        <area shape="rect" coords="34,44,270,350" href="./pages/cat.html" alt="">
+        <area shape="rect" coords="290,172,33,250" href="./pages/cat2.html" alt="">
+        <area shape="circle" coords="337,300,44" href="./pages/cat3.html" alt="">
+        <area shape="circle" coords="25, 10, 700, 100" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" blank alt="">
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,
+            259,103,161,128,147" href="./pages/cat3.html" alt="">
+    </map>
+
+    <div>
+        <svg>
+            <rect x="120" y="80" width="100"
+                height="100" rx="15" /> 
+        </svg>
+        <svg>
+            <polygon points="100,100 150,25
+                150,75 200,0" fill="none"
+                stroke="black" /> 
+        </svg>
+        <svg>
+            <ellipse cx="100" cy="50" rx="100"
+                ry="50" /> 
+        </svg>
+        <svg>
+            <line x1="0" y1="80" x2="100"
+                y2="20" stroke="black" />
+        </svg>
+
+        <svg height="300" width="500">
+            <ellipse cx="100" cy="50" rx="20"
+                ry="20" style="fill:#ffffff;stroke:#000000;stroke-width:3"/>
+            <rect x="75" y="60" width="50"
+                height="50" /> 
+            <ellipse cx="100" cy="200" rx="100"
+                ry="100" />
+        </svg>
+    </div>
+</body>
+</html>

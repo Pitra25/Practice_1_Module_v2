@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body,
+html{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7e7e7e;
+}
+
+span{
+    width: .7rem;
+    height: .7rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.wrapper{
+    width: calc(6rem +15px);
+    height: calc(6rem +15px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.clock{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    background: #ffffff;
+    border-radius: 50%;
+    
+}
+
+.clock::before, .clock::after{
+    position: absolute;
+    content: '';
+    top: calc(4rem * .25);
+    width: .4rem;
+    background: palegreen;
+    border-radius: 6px;
+    transform-origin: center calc(100% - calc(.4rem / 2));
+    animation: anim infinite linear;
+}
+
+.clock::before{
+    height: 3.2rem;
+    animation-duration: 1s;
+}
+.clock::after{
+    top: calc(4rem * .25 + 1.6rem);
+    height: 1.6rem;
+    animation-duration: 60s;
+}
+
+@keyframes anim{
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*
+.hours-container { animation: rotate 43200s infinite linear; }
+.minutes-container { animation: rotate 3600s infinite linear; }
+.seconds-container { animation: rotate 60s infinite linear; }
+*/
